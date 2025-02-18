@@ -2,31 +2,30 @@ package java.practice.graph;
 
 public class Edge {
 
-    private Vertex end;
     private Vertex start;
-    Integer weight;
+    private Vertex end;
+    private Integer weight;
+
+
 
 
     public Edge(Vertex startV, Vertex endV, Integer inputWeight){
-        this.end = endV;
         this.start = startV;
+        this.end = endV;
         this.weight = inputWeight;
     }
 
-    public Vertex getStart(){
-        return this.start;
+
+    public Vertex getStart() {
+        return start;
     }
 
-    public Vertex getEnd(){
-        return  this.end;
+    public void setStart(Vertex start) {
+        this.start = start;
     }
 
-    public Integer getWeight(){
-        return this.weight;
+    public Vertex getEnd() {
+        return end;
     }
-
-
-
-
 
 }
